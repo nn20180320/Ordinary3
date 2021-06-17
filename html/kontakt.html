@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+  <html lang="sr">
+
+  <head>
+    <title>FitZone | Kontakt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stil.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script>
+	function datum() 
+		{
+		   var d = new Date();  
+		   var a =
+		          new Array("nedelja","ponedeljak","utorak","sreda","četvrtak","petak","subota"); 
+		   i = d.getDay(); 
+		   dan_u_n = a[i]; 
+		   dan_u_m= d.getDate();  
+		   m = d.getMonth() + 1; 
+		   g = d.getFullYear();  
+		   
+		   document.write(dan_u_n + ", " + dan_u_m + "." + m + ". " + g + ". " );
+		}
+		</script>
+  </head>
+  <body>
+
+    <header>
+
+        <a href="index.html" class="logo"><img src="logo/logo.jpg" alt="logo"></a>
+        <nav>
+          <ul>
+          <li><a href='index.html'>POČETNA</a></li>
+          <li><a href='index.html#onama'>O NAMA</a></li>
+          <li><a href="galerija.html">GALERIJA</a></li>
+          <li><a href="programi.html">PROGRAMI</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+          </nav>
+  
+
+      <div class="soc-net">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+
+
+    </header>
+    
+</div>
+
+<div id="kontakt">
+  <div class="container kontakt-container">  
+
+    <div class="div-forma">
+      <form id="forma" name="forma">
+        <ul class="form-style-1">
+          <li>
+            <label>Vaše ime: <span class="required">*</span></label
+            ><input
+              type="text"
+              name="ime"
+              id="ime"
+              class="field-divided"
+              placeholder="Ime"
+            />
+            <input
+              type="text"
+              name="prezime"
+              id="prezime"
+              class="field-divided"
+              placeholder="Prezime"
+            />
+          </li>
+          <li>
+            <label>Email: <span class="required">*</span></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="field-long"
+            />
+          </li>
+          <li>
+            <label>Lokacija gde biste trenirali: </label>
+            <select name="field4" class="field-select">
+              <option value="Beograd">Novi Beograd</option>
+              <option value="Kragujevac">Voždovac</option>
+              <option value="Nis">Vračar</option>
+            </select>
+          </li>
+          <li id="tip">
+            <label for="tip">Tip treninga za koji ste zainteresovani: </label>
+            <input type="radio" name="tip" value="prvi" />
+            Funkcionalni fitnes <br>
+            <input type="radio" name="tip" value="drugi" />
+            Relax <br>
+            <input type="radio" name="tip" value="treci" />
+            Bodybuilding <br>
+            <input type="radio" name="tip" value="cetvrti" />
+            Weightlifting
+          </li>
+          
+          </li>
+          <li>
+            <label>Vaša poruka: <span class="required">*</span></label>
+            <textarea
+              name="poruka"
+              id="poruka"
+              class="field-long field-textarea"
+              placeholder="Unesite poruku"
+            ></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Pošalji" />
+            <input type="reset" value="Obriši" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+    <footer>
+
+   <p>Radno vreme: 07-21h</p>
+
+      <p> Novi Beograd / Voždovac / Vračar </p>
+      <br>
+
+      <p>  Copyright	&copy; FitZone 2020. All rights reserved.™ </p>
+ <p>
+	  	<script>
+				datum();
+			</script></p>
+			<div id="txt"></div>
+			
+	 
+</div>
+    </footer>
+
+    <script src="js/skript.js"></script>
+    </body>
+</html>

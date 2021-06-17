@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+  <html lang="sr">
+
+  <head>
+    <title>FitZone | Početna</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stil.css">
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	
+	<script>
+	function datum() 
+		{
+		   var d = new Date();  
+		   var a =
+		          new Array("nedelja","ponedeljak","utorak","sreda","četvrtak","petak","subota"); 
+		   i = d.getDay(); 
+		   dan_u_n = a[i]; 
+		   dan_u_m= d.getDate();  
+		   m = d.getMonth() + 1; 
+		   g = d.getFullYear();  
+		   
+		   document.write(dan_u_n + ", " + dan_u_m + "." + m + ". " + g + ". " );
+		}
+		</script>
+
+		
+	
+  </head>
+  <body>
+     
+    <header>
+
+        <a href="index.html" class="logo"><img src="logo/logo.jpg" alt="logo"></a>
+        <nav>
+          <ul>
+          <li><a href='index.html'>POČETNA</a></li>
+          <li><a href='index.html#onama'>O NAMA</a></li>
+          <li><a href="galerija.html">GALERIJA</a></li>
+          <li><a href="PROGRAMI.html">PROGRAMI</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+          </nav>
+  
+
+       <div class="soc-net">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+
+
+    </header>
+
+    <div id="hammenu">
+
+
+      <script>
+      var otvori=document.getElementById('icon');
+      var zatvori=document.getElementById('close');
+      var navigacija=document.getElementById('nav');
+
+otvori.addEventListener('click',show, false);
+zatvori.addEventListener('click',remove, false);
+
+function show(evObj){
+  var klik=evObj.target;
+    if(klik.tagName.toUpperCase()==='IMG'){
+      navigacija.style.display="block";
+      zatvori.style.display="block";
+      otvori.style.display="none";
+    }
+}
+
+function remove(e){
+  var cilj=e.target;
+    if(cilj.tagName.toUpperCase()==='IMG'){
+      navigacija.style.display="none";
+      zatvori.style.display="none";
+      otvori.style.display="block";
+    }
+}</script>
+
+  </div>
+
+</div>
+
+
+<div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+    <img src="slike/1.jpeg" style="width:100%" alt="">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="slike/2.jpeg" style="width:100%" alt="">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="slike/3.jpeg" style="width:100%" alt="">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="slike/4.jpeg" style="width:100%" alt="">
+  </div>
+
+</div>
+
+<br>
+
+    <main>
+
+<h1 id='onama'>Vaša nova zona komfora</h1>
+<p class='paragraf'> Prostor FitZone je opremljen brojnim savremenim fitnes rekvizitima, sa ventilacijom i klimatizacijom tako da boravak bude prijatan. Pored prijemnog pulta, na raspolaganju su svlačionice sa ormarićima i tuš kabinama.
+U FitZone održavaju se grupni i individualni treninzi vođeni od strane stručnog trenerskog tima. Osmišljeni su tako da vežbačima budu dovoljno izazovni kako bi obezbedili napredak, ali i prilagođeni njihovim fizičkim mogućnostima. Na taj način, vežbač se nalazi u fokusu.
+Koncept FitZone zasnovan je na ideji da vežbačima različitog uzrasta i nivoa utrenirasnosti ponudi mesto gde će rado dolaziti. Spremni smo da radimo zajedno na razvoju Vaših fizičkih sposobnsti, veština i usvajanju pravilne tehnike treniranja. Želimo da Vas uvedemo u trenažni proces koji će postati Vaša rutina. Trudimo se da u FitZone vlada atmosfera koja motiviše vežbače da rade na sebi i svom zdravlju. Pridružite nam se na mestu koje će postati Vaša nova zona komfora. 
+
+<a href="docs/cenovnik.pdf">Ovde preuzmite naš cenovnik.</a>
+    </main>
+
+
+<h2>Trenerski tim:</h2>
+ 
+<img class="krugovi" src='slike/1.jpg' alt=""><img class="krugovi" src='slike/2.jpg' alt=""><img class="krugovi" src='slike/3.jpg' alt=""><img class="krugovi" src='slike/4.jpg' alt="">
+
+  <footer>
+<div>
+   <p>Radno vreme: 07-21h</p>
+
+      <p> Novi Beograd / Voždovac / Vračar </p>
+      <br>
+
+      <p>  Copyright	&copy; FitZone 2020. All rights reserved.™ </p>
+	  <p>
+	  	<script>
+				datum();
+			</script></p>
+			<div id="txt"></div>
+			
+	 
+</div>
+    </footer>
+
+    <script src="js/skript.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+  <html lang="sr">
+
+  <head>
+    <title>FitZone | Galerija</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stil.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script>
+	function datum() 
+		{
+		   var d = new Date();  
+		   var a =
+		          new Array("nedelja","ponedeljak","utorak","sreda","četvrtak","petak","subota"); 
+		   i = d.getDay(); 
+		   dan_u_n = a[i]; 
+		   dan_u_m= d.getDate();  
+		   m = d.getMonth() + 1; 
+		   g = d.getFullYear();  
+		   
+		   document.write(dan_u_n + ", " + dan_u_m + "." + m + ". " + g + ". " );
+		}
+		</script>
+    <link rel="stylesheet" href="css/fotorama.css">
+
+
+
+  </head>
+  <body>
+
+
+    <header>
+
+
+        <a href="index.html" class="logo"><img src="logo/logo.jpg" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href='index.html'>POČETNA</a></li>
+            <li><a href='index.html#onama'>O NAMA</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="PROGRAMI.html">PROGRAMI</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+          </nav>
+  
+
+      <div class="soc-net">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+
+
+
+    </header>
+    <div id="hammenu">
+
+      <a href="index.html"><img id="logo" src="logo/logo.jpg" alt="logo" title="logo"></a>
+      <img id="icon" src="slike/o.png" alt="hammenu" title="hammenuicon">
+      <img src="slike/x.png" alt="closeicon" id="close">
+      <div id="nav">
+      
+        <ul>
+          <li><a href='index.html'>POČETNA</a></li>
+          <li><a href='index.html#onama'>O NAMA</a></li>
+          <li><a href="galerija.html">GALERIJA</a></li>
+          <li><a href="asortiman.html">PROGRAMI</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        
+
+
+
+      <script>
+			var otvori=document.getElementById('icon');
+			var zatvori=document.getElementById('close');
+			var navigacija=document.getElementById('nav');
+
+			otvori.addEventListener('click',show, false);
+			zatvori.addEventListener('click',remove, false);
+
+			function show(evObj){
+			  var klik=evObj.target;
+				if(klik.tagName.toUpperCase()==='IMG'){
+				  navigacija.style.display="block";
+				  zatvori.style.display="block";
+				  otvori.style.display="none";
+				}
+			}
+
+			function remove(e){
+			  var cilj=e.target;
+				if(cilj.tagName.toUpperCase()==='IMG'){
+				  navigacija.style.display="none";
+				  zatvori.style.display="none";
+				  otvori.style.display="block";
+				}
+	}
+	</script>
+
+
+  </div>
+</div>
+
+
+
+      <div class="fotorama" data-nav="thumbs">
+
+            <img data-caption="" src="slike/G1.jpeg" alt="">
+			
+            <img data-caption="" src="slike/G2.jpg" alt="">
+
+            <img data-caption="" src="slike/G3.jpg" alt="">
+
+            <img data-caption="" src="slike/G4.jpg" alt="">
+
+            <img data-caption="" src="slike/G5.jpg" alt="">
+
+            <img data-caption="" src="slike/G6.jpg" alt="">
+
+
+            <img data-caption="" src="slike/G1.jpg" alt=""> //ovde zameni sliku posto je losa rezolucija
+			
+			
+			
+            <img data-caption="" src="slike/G7.jpg" alt="">
+
+            <img data-caption="" src="slike/G8.jpg" alt="">
+
+            <img data-caption="" src="slike/G9.jpg" alt="">
+
+            <img data-caption="" src="slike/G10.jpg" alt="">
+
+
+
+
+      </div>
+
+     <footer class="footer-galerija">
+
+   <p>Radno vreme: 07-21h</p>
+
+      <p> Novi Beograd / Voždovac / Vračar </p>
+      <br>
+
+      <p>  Copyright	&copy; FitZone 2020. All rights reserved.™ </p>
+ <p>
+	  	<script>
+				datum();
+			</script></p>
+			<div id="txt"></div>
+			
+	 
+</div>
+    </footer>
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/fotorama.js"></script>
+
+
+    </body>
+</html>
